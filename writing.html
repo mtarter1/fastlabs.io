@@ -3,98 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Writing | FastLabs</title>
-    <meta
-      name="description"
-      content="FastLabs writing, notes, case studies, and small practical posts from Madison Tarter."
-    >
-    <meta name="theme-color" content="#0bb7aa">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <title>lab | fastlabs.io</title>
+    <meta name="description" content="The fastlabs.io personal lab for recipes, photos, recommended reads, slide decks, notes, blog posts, and future demos.">
+    <meta name="theme-color" content="#13c2b2">
+    <link rel="icon" href="assets/fastlabs-logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-
-    <header class="site-header" data-header>
-      <a class="brand" href="index.html" aria-label="FastLabs home">
-        <img src="assets/fastlabs-mark.svg" alt="" width="40" height="40">
-        <span>FastLabs</span>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="fastlabs.io home">
+        <img src="assets/fastlabs-logo.png" alt="" width="40" height="40">
+        <span>fastlabs.io</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
         <span class="sr-only">Menu</span>
       </button>
       <nav class="site-nav" id="site-nav" data-site-nav>
-        <a href="projects.html">Work</a>
-        <a href="index.html#services">Services</a>
-        <a href="about.html">About</a>
-        <a aria-current="page" href="writing.html">Writing</a>
-        <a class="nav-cta" href="contact.html">Start a project</a>
+        <a href="projects.html">work</a>
+        <a href="services.html">services</a>
+        <a href="about.html">about</a>
+        <a aria-current="page" href="writing.html">lab</a>
+        <a class="nav-cta" href="contact.html">start</a>
       </nav>
     </header>
 
-    <main id="main">
-      <section class="page-hero section-band">
-        <div class="section-inner hero-narrow">
-          <p class="eyebrow">Writing</p>
-          <h1>Notes, case studies, and useful things worth sharing quietly.</h1>
-          <p>
-            A static writing area for publishing without needing to blast every thought onto a feed. Add posts as plain HTML pages whenever they are ready.
-          </p>
-        </div>
+    <main id="main" class="screen page-screen lab-screen">
+      <section class="page-copy">
+        <p class="eyebrow">personal lab</p>
+        <h1>useful little things.</h1>
+        <p class="lede">A future home for free personal applets, recommended reads, decks, writing, media, and demos that do not need to become a social feed.</p>
       </section>
 
-      <section class="writing-index" aria-labelledby="writing-title">
-        <div class="section-inner">
-          <div class="section-heading">
-            <p class="eyebrow">Index</p>
-            <h2 id="writing-title">Draft lanes</h2>
-          </div>
-          <div class="writing-grid">
-            <article class="writing-card">
-              <p class="tag-row"><span>Case study</span><span>Draft</span></p>
-              <h3>How to map a support automation before touching n8n</h3>
-              <p>A practical note on identifying triggers, handoffs, human review points, and where AI help is actually useful.</p>
-              <a href="contact.html">Ask about this topic</a>
-            </article>
-            <article class="writing-card">
-              <p class="tag-row"><span>Build note</span><span>Draft</span></p>
-              <h3>When Retool is the right first product surface</h3>
-              <p>Thoughts on internal tools, speed, data models, permissions, and when to move from a low-code baseline into custom software.</p>
-              <a href="contact.html">Ask about this topic</a>
-            </article>
-            <article class="writing-card">
-              <p class="tag-row"><span>Personal systems</span><span>Idea</span></p>
-              <h3>A recipe system that does not become another chore</h3>
-              <p>A small product idea for recipes, shopping, notes, and the difference between collecting information and using it.</p>
-              <a href="projects.html#personal-systems">Open project lane</a>
-            </article>
-          </div>
-        </div>
+      <section class="lab-board" aria-label="personal applets">
+        <article><span>recipes</span><strong>display + management app</strong></article>
+        <article><span>photos</span><strong>private archive, public selects</strong></article>
+        <article><span>bookshelf</span><strong>recommended reads, notes, lists</strong></article>
+        <article><span>decks</span><strong>slide decks, artifacts, storylines</strong></article>
+        <article><span>blog</span><strong>notes, build logs, case writing</strong></article>
+        <article><span>demos</span><strong>videos, Retool embeds, experiments</strong></article>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="section-inner footer-grid">
-        <div>
-          <a class="brand footer-brand" href="index.html" aria-label="FastLabs home">
-            <img src="assets/fastlabs-mark.svg" alt="" width="36" height="36">
-            <span>FastLabs</span>
-          </a>
-          <p>Consulting for internal apps, automation, data products, and practical software.</p>
-        </div>
-        <div class="footer-links">
-          <a href="projects.html">Work</a>
-          <a href="about.html">About</a>
-          <a href="writing.html">Writing</a>
-          <a href="contact.html">Contact</a>
-          <a href="https://www.linkedin.com/in/madison-tarter/" rel="noreferrer">Madison LinkedIn</a>
-          <a href="https://www.linkedin.com/company/fastlabs-io/" rel="noreferrer">FastLabs LinkedIn</a>
-        </div>
-      </div>
-    </footer>
 
     <script src="script.js"></script>
   </body>

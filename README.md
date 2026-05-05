@@ -1,11 +1,11 @@
-# FastLabs static site
+# fastlabs.io static site
 
 This is a lightweight static website for `fastlabs.io`, built to run directly on GitHub Pages.
 
 ## Pages
 
-- `index.html` - consulting-forward home page
-- `about.html` - Madison / FastLabs background page, grounded in the 2025 resume
+- `index.html` - small-business/big-engine home page
+- `about.html` - Madison / fastlabs.io background page, grounded in the 2025 resume
 - `projects.html` - project index with simple client / automation / lab filters
 - `writing.html` - static writing and blog placeholder
 - `contact.html` - mailto-based contact form that works without a backend
