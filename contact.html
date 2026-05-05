@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | FastLabs</title>
+    <meta
+      name="description"
+      content="Contact Madison Tarter and FastLabs about internal tooling, automation, dashboards, data products, and practical software projects."
+    >
+    <meta name="theme-color" content="#0bb7aa">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="FastLabs home">
+        <img src="assets/fastlabs-mark.svg" alt="" width="40" height="40">
+        <span>FastLabs</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-site-nav>
+        <a href="projects.html">Work</a>
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="writing.html">Writing</a>
+        <a aria-current="page" class="nav-cta" href="contact.html">Start a project</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero section-band contact-hero">
+        <div class="section-inner contact-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h1>Bring the messy workflow. FastLabs can help make it usable.</h1>
+            <p>
+              Send a note about an internal app, automation, dashboard, data product, support workflow, or small software idea. The form opens your email client so the page works on GitHub Pages today.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:madison.tarter@gmail.com?subject=FastLabs%20project%20conversation">madison.tarter@gmail.com</a>
+              <a href="mailto:madison.tarter@gmail.com?subject=FastLabs%20meeting%20request">Schedule a meeting</a>
+              <a href="https://www.linkedin.com/in/madison-tarter/" rel="noreferrer">Madison LinkedIn</a>
+              <a href="https://www.linkedin.com/company/fastlabs-io/" rel="noreferrer">FastLabs LinkedIn</a>
+            </div>
+          </div>
+
+          <form class="contact-form" data-contact-form>
+            <label>
+              <span>Name</span>
+              <input name="name" autocomplete="name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <label>
+              <span>Project lane</span>
+              <select name="lane" required>
+                <option value="">Choose one</option>
+                <option>Internal app or Retool build</option>
+                <option>Automation or support workflow</option>
+                <option>Dashboard, reporting, or data product</option>
+                <option>Personal utility or product idea</option>
+                <option>Something else</option>
+              </select>
+            </label>
+            <label>
+              <span>What should work better?</span>
+              <textarea name="message" rows="6" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Open email draft</button>
+            <p class="form-note" data-form-note aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html" aria-label="FastLabs home">
+            <img src="assets/fastlabs-mark.svg" alt="" width="36" height="36">
+            <span>FastLabs</span>
+          </a>
+          <p>Consulting for internal apps, automation, data products, and practical software.</p>
+        </div>
+        <div class="footer-links">
+          <a href="projects.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="writing.html">Writing</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://www.linkedin.com/in/madison-tarter/" rel="noreferrer">Madison LinkedIn</a>
+          <a href="https://www.linkedin.com/company/fastlabs-io/" rel="noreferrer">FastLabs LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
