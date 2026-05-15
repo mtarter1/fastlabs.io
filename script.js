@@ -33,6 +33,42 @@
   var contactForm = document.querySelector("[data-contact-form]");
 
   if (contactForm) {
+    var tagInput = contactForm.querySelector("[data-tag-input]");
+    var tagButtons = Array.prototype.slice.call(contactForm.querySelectorAll("[data-tag]"));
+
+    if (tagInput && tagButtons.length) {
+      tagButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var tag = button.getAttribute("data-tag") || "";
+          var tags = tagInput.value.split(",").map(function (value) {
+            return value.trim();
+          }).filter(Boolean);
+
+          if (tags.indexOf(tag) === -1) {
+            tags.push(tag);
+          } else {
+            tags = tags.filter(function (value) {
+              return value !== tag;
+            });
+          }
+
+          tagInput.value = tags.join(", ");
+          button.classList.toggle("active", tags.indexOf(tag) !== -1);
+          tagInput.focus();
+        });
+      });
+
+      tagInput.addEventListener("input", function () {
+        var selected = tagInput.value.split(",").map(function (value) {
+          return value.trim();
+        });
+
+        tagButtons.forEach(function (button) {
+          button.classList.toggle("active", selected.indexOf(button.getAttribute("data-tag")) !== -1);
+        });
+      });
+    }
+
     contactForm.addEventListener("submit", function (event) {
       event.preventDefault();
 
@@ -42,20 +78,20 @@
       var lane = formData.get("lane") || "";
       var message = formData.get("message") || "";
       var note = contactForm.querySelector("[data-form-note]");
-      var subject = "FastLabs project conversation: " + lane;
+      var subject = "fastlabs project conversation: " + lane;
       var body = [
         "Name: " + name,
         "Email: " + email,
-        "Project lane: " + lane,
+        "Focus: " + lane,
         "",
-        "What should work better?",
+        "What are we tuning?",
         message
       ].join("\n");
 
-      window.location.href = "mailto:madison.tarter@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      window.location.href = "mailto:madison@fastlabs.io?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 
       if (note) {
-        note.textContent = "Your email draft should open now. If it does not, email madison.tarter@gmail.com directly.";
+        note.textContent = "Your email draft should open now. If it does not, email madison@fastlabs.io directly.";
       }
     });
   }
